@@ -1,0 +1,31 @@
+@mixin btn {
+  width: 180px;
+  height: 53px;
+  color: #fff;
+  text-align: center;
+  font-family: $font-mono-s;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 25px;
+  background: $bg-yellow;
+  border: 2px solid $bg-yellow;
+  border-radius: 5px;
+  transition: 0.2s linear;
+}
+
+@mixin for-tablet{
+    @media(max-width:992px){
+        @content;
+    }
+}
+@mixin for-medium-tablet{
+    @media(max-width:768px){
+        @content;
+    }
+}
+@mixin for-mobile{
+    @media(max-width:576px){
+        @content;
+    }
+}

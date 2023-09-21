@@ -1,0 +1,54 @@
+nav {
+  width: 100%;
+  height: 96px;
+  background-color: $primary-white;
+  position: fixed;
+  top: 0;
+  display: flex;
+  align-items: center;
+  left: 0;
+
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  div {
+    display: flex;
+    column-gap: 58.18px;
+    .navbar__logo {
+      img {
+        width: 107.817px;
+        height: 28.56px;
+      }
+    }
+    .navbar__menu {
+      display: flex;
+      column-gap: 32px;
+      align-items: center;
+      &-item {
+        a {
+          outline: none;
+          text-decoration: none;
+          color: $text-gray;
+          font-family: $font-mono-s;
+          font-size: 15px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 25px;
+        }
+      }
+    }
+    
+  }
+  &__btn{
+    @include btn;
+  }
+  &__btn:active{
+     background: $primary-white;
+      color: $bg-yellow;
+  }
+}
+section{
+    margin-top: 96px;
+}
