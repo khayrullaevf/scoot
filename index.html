@@ -10,7 +10,7 @@
   <body>
     <!-- Header -->
     <header>
-      <nav>
+      <nav class="navbar__main">
         <div class="container">
           <div class="navbar">
             <div>
@@ -27,7 +27,46 @@
           </div>
         </div>
       </nav>
-       
+      <nav class="navbar__mobile">
+        <div class="container">
+          <div class="navbar__mobile-content">
+            <input
+              type="checkbox"
+              name="navbar__checkbox"
+              id="navbar__checkbox"
+              class="navbar__checkbox"
+            />
+            <label for="navbar__checkbox">
+              <img src="./imgs/menu.svg" alt="menu" class="checkbox__add" />
+              <img src="./imgs/X.svg" alt="menu" class="checkbox__remove" />
+            </label>
+            <div class="mobile__offcanvas">
+              <ul class="mobile__offcanvas-menu">
+                <li><a href="#" target="_blank">About</a></li>
+                <li><a href="#" target="_blank">Location</a></li>
+                <li><a href="#" target="_blank">Careers</a></li>
+              </ul>
+              <button class="mobile__offcanvas-btn">Get Scootin</button>
+            </div>
+            <a href="./index.html">
+              <img
+                src="./imgs/navbar-logo.svg"
+                alt="navbar-logo"
+                class="mobile__logo"
+            /></a>
+          </div>
+        </div>
+      </nav>
+      <div class="hero">
+         <img src="./imgs/hero-line.png" alt="hero-line" class="hero__line">
+           <div class="hero__content">
+             <h1 class="hero__content-title">Scooter sharing made simple</h1>
+             <h2 class="hero__content-subtitle">Scoot takes the hassle out of urban mobility. Our bikes are placed in convenient locations in each of our cities. Use our app to locate the nearest bike, unlock it with a tap, and you’re away!</h2>
+               <button class="hero__content-btn">Get Scootin</button>
+           </div>
+
+         <img src="./imgs/hero-arrow.png" alt="hero-arrow" class="hero__arrow">
+      </div>
     </header>
     <!-- Header end-->
   </body>
