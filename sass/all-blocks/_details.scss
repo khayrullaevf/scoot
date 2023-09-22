@@ -1,0 +1,115 @@
+.details {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: -200;
+  row-gap: 83px;
+  &__card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &-content {
+      padding-left: 11.4%;
+      &__title {
+        color: $text-card-title;
+        font-family: $font-mono-s;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 48px;
+        letter-spacing: -2.143px;
+        max-width: 445px;
+      }
+      &__subtitle {
+        color: $text-card;
+        font-family: $font-l-d;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 25px;
+        max-width: 445px;
+        margin-top: 24px;
+        margin-bottom: 40px;
+      }
+      .details-btn {
+        @include btn;
+      }
+    }
+    &-content2 {
+      padding-left: 11.4%;
+      padding-right: 11.4%;
+    }
+    &-img1 {
+      position: relative;
+      right: 0;
+    }
+  }
+}
+
+@include for-medium-tablet {
+  .details {
+    display: flex;
+    flex-direction: column;
+    row-gap: 113px;
+    &__card {
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: center;
+      row-gap: 42px;
+      &-content {
+        display: flex;
+        flex-direction: column;
+        padding-left: 0;
+        justify-content: center;
+        align-items: center;
+        &__title {
+          text-align: center;
+          max-width: 457px;
+        }
+        &__subtitle {
+          text-align: center;
+
+          max-width: 573px;
+        }
+        .details-btn {
+          text-align: center;
+          //   margin-left: 25.4%;
+        }
+      }
+      &-content2 {
+        padding-right: 0;
+      }
+      img {
+        width: 100%;
+      }
+    }
+    .details__card2 {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
+
+@include for-mobile {
+  .details {
+    &__card {
+      &-content {
+        &__title {
+          max-width: 311px;
+          font-size: 32px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 32px;
+          letter-spacing: -1.429px;
+        }
+        &__subtitle {
+          max-width: 311px;
+          font-size: 15px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 25px;
+        }
+      }
+    }
+  }
+}
