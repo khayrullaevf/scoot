@@ -1,0 +1,127 @@
+.features {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 160px;
+  padding-bottom: 147px;
+  column-gap: 30px;
+  &__card {
+    display: flex;
+    flex-direction: column;
+
+    img {
+      width: 96px;
+      height: 96px;
+    }
+    &-title {
+      color: $text-card-title;
+      font-family: $font-mono-s;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 28px;
+      letter-spacing: -1.071px;
+      margin-top: 40px;
+      margin-bottom: 27px;
+    }
+    &-subtitle {
+      color: $text-card;
+      font-family: $font-l-d;
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 25px; /* 166.667% */
+      max-width: 350px;
+    }
+  }
+}
+
+.features-line {
+  position: relative;
+  top: 215px;
+  z-index: -1;
+  width: 67.6%;
+}
+
+@include for-tablet {
+  .features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 122px;
+    &__card {
+      display: flex;
+      flex-direction: row;
+      column-gap: 79px;
+      &-text {
+        display: flex;
+        flex-direction: column;
+        row-gap: 27px;
+        .features__card-title {
+          max-width: 398px;
+        }
+        .features__card-subtitle {
+          max-width: 398px;
+          font-size: 15px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 25px;
+        }
+      }
+    }
+  }
+  .features-line {
+    position: relative;
+    top: 320px;
+    right: 8%;
+    transform: rotate(90deg);
+  }
+}
+@include for-medium-tablet {
+  .features-line {
+    position: relative;
+    top: 250px;
+    right: 15%;
+  }
+}
+@include for-mobile {
+  .features-line {
+    display: none;
+  }
+  .features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 48px;
+    &__card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      &-text {
+        display: flex;
+        align-items: center;
+        min-width: 311px;
+        .features__card-title {
+          text-align: center;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 28px;
+          letter-spacing: -0.893px;
+          max-width: 311px;
+        }
+        .features__card-subtitle {
+          text-align: center;
+          font-size: 15px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 25px;
+          max-width: 311px;
+        }
+      }
+    }
+  }
+}
+
+// 8.79
+// 288 /32.7%
+// 100 11.37656427758817 %
