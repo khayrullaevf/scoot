@@ -126,7 +126,7 @@ header{
     position: fixed;
     left: 0;
     top: 96px;
-    transition: 0.5s linear;
+    transition: 0.4s linear;
     transform: translateX(-120%);
     visibility: hidden;
     padding-left: 32px;
@@ -152,7 +152,7 @@ header{
     }
     &-btn {
       @include btn;
-      margin-top: 339px;
+      margin-top:120%;
     }
   }
   .navbar__checkbox:checked ~ .checkbox__remove {
@@ -166,7 +166,7 @@ header{
 }
 
 .hero {
-  background-image: url("../../imgs/hero-bg.jpg");
+  background-image: url("../imgs/hero-bg.jpg");
   background-repeat: no-repeat;
   background-position: center;
   width: 100%;

@@ -145,7 +145,7 @@ header {
     position: fixed;
     left: 0;
     top: 96px;
-    transition: 0.5s linear;
+    transition: 0.4s linear;
     transform: translateX(-120%);
     visibility: hidden;
     padding-left: 32px;
@@ -181,7 +181,7 @@ header {
     border: 2px solid #FCB72B;
     border-radius: 5px;
     transition: 0.2s linear;
-    margin-top: 339px;
+    margin-top: 120%;
   }
   .navbar__checkbox:checked ~ .checkbox__remove {
     visibility: visible;
@@ -192,7 +192,7 @@ header {
   }
 }
 .hero {
-  background-image: url("../../imgs/hero-bg.jpg");
+  background-image: url("../imgs/hero-bg.jpg");
   background-repeat: no-repeat;
   background-position: center;
   width: 100%;
@@ -518,6 +518,9 @@ header {
   position: relative;
   right: 0;
 }
+.details__card img {
+  width: 50%;
+}
 
 @media (max-width: 768px) {
   .details {
@@ -559,6 +562,10 @@ header {
     display: flex;
     flex-direction: column;
   }
+  .details__card2 img {
+    position: relative;
+    right: 10%;
+  }
 }
 @media (max-width: 576px) {
   .details__card-content__title {
@@ -576,13 +583,17 @@ header {
     font-weight: 400;
     line-height: 25px;
   }
+  .details__card2 img {
+    position: relative;
+    right: 10%;
+  }
 }
 footer {
   width: 100%;
 }
 
 .signup {
-  background-image: url("../../imgs/footer-bg.png");
+  background-image: url("../imgs/footer-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;

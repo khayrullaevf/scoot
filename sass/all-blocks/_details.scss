@@ -44,6 +44,9 @@
       position: relative;
       right: 0;
     }
+    img {
+      width: 50%;
+    }
   }
 }
 
@@ -89,6 +92,19 @@
       flex-direction: column;
     }
   }
+  .details {
+    &__card2 {
+      img {
+        position: relative;
+        right: 10%;
+      }
+    }
+    &__card3 {
+      img {
+       
+      }
+    }
+  }
 }
 
 @include for-mobile {
@@ -109,9 +125,14 @@
           font-style: normal;
           font-weight: 400;
           line-height: 25px;
-          
         }
       }
+    }
+  }
+  .details__card2 {
+    img {
+      position: relative;
+      right: 10%;
     }
   }
 }
