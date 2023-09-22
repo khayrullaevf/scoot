@@ -1,4 +1,4 @@
-header{
+header {
   width: 100%;
 }
 .navbar__main {
@@ -37,6 +37,12 @@ header{
             font-style: normal;
             font-weight: 700;
             line-height: 25px;
+            transition: 0.3s all;
+          }
+        }
+        &-item {
+          a:hover {
+            color: $bg-yellow;
           }
         }
       }
@@ -56,7 +62,7 @@ header{
 .mobile__offcanvas {
   display: none;
 }
-@include for-tablet{
+@include for-tablet {
   // header{
   //   width: 100%;
   // }
@@ -152,7 +158,7 @@ header{
     }
     &-btn {
       @include btn;
-      margin-top:120%;
+      margin-top: 120%;
     }
   }
   .navbar__checkbox:checked ~ .checkbox__remove {
@@ -218,6 +224,10 @@ header{
       margin-left: 94px;
       margin-top: 40px;
     }
+    &-btn:hover{
+      background: $primary-white;
+      color: $bg-yellow;
+    }
   }
 }
 .hero::after {
@@ -273,9 +283,9 @@ header{
 
 @include for-mobile {
   .hero {
-     &__arrow{
+    &__arrow {
       left: -310px;
-     }
+    }
     &__content {
       margin-top: 115px;
       margin-left: 32px;

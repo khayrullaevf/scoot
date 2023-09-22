@@ -62,6 +62,10 @@ header {
   font-style: normal;
   font-weight: 700;
   line-height: 25px;
+  transition: 0.3s all;
+}
+.navbar__main .navbar div .navbar__menu-item a:hover {
+  color: #FCB72B;
 }
 .navbar__main .navbar__btn {
   width: 180px;
@@ -256,6 +260,10 @@ header {
   transition: 0.2s linear;
   margin-left: 94px;
   margin-top: 40px;
+}
+.hero__content-btn:hover {
+  background: #fff;
+  color: #FCB72B;
 }
 
 .hero::after {
